@@ -1,2 +1,5 @@
-# aws-serverless-config-rules-workshop
-Sample code and instructions to create AWS Config Rules using Lambda functions, and step function state machines to validate those rules
+AWS Serverless Config Rules Workshop
+
+## License
+
+This library is licensed under the Apache 2.0 License. 
