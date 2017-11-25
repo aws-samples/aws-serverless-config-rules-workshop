@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "invokingEvent": "{\"configurationItemDiff\":{\"changedProperties\":{},\"changeType\":\"CREATE\"},\"configurationItem\":{\"relatedEvents\":[\"3d17af67-cf7c-473d-bdae-23e8b9dc09fa\"],\"relationships\":[{\"resourceId\":\"acl-ca6bb0ac\",\"resourceName\":null,\"resourceType\":\"AWS::EC2::NetworkAcl\",\"name\":\"Contains NetworkAcl\"},{\"resourceId\":\"igw-dce41abb\",\"resourceName\":null,\"resourceType\":\"AWS::EC2::InternetGateway\",\"name\":\"Is attached to InternetGateway\"},{\"resourceId\":\"rtb-12345\",\"resourceName\":null,\"resourceType\":\"AWS::EC2::RouteTable\",\"name\":\"Contains RouteTable\"},{\"resourceId\":\"sg-1234456\",\"resourceName\":null,\"resourceType\":\"AWS::EC2::SecurityGroup\",\"name\":\"Contains SecurityGroup\"}],\"configuration\":{\"cidrBlock\":\"10.217.0.0/16\",\"dhcpOptionsId\":\"dopt-2e7f674c\",\"state\":\"available\",\"vpcId\":\"vpc-123445\",\"instanceTenancy\":\"default\",\"ipv6CidrBlockAssociationSet\":[],\"cidrBlockAssociationSet\":[{\"associationId\":\"vpc-cidr-assoc-94faaffc\",\"cidrBlock\":\"10.217.0.0/16\",\"cidrBlockState\":{\"state\":\"associated\",\"statusMessage\":null}}],\"isDefault\":false,\"tags\":[{\"key\":\"private\",\"value\":\"true\"}]},\"supplementaryConfiguration\":{},\"tags\":{\"private\":\"true\"},\"configurationItemVersion\":\"1.2\",\"configurationItemCaptureTime\":\"2017-11-22T00:46:58.684Z\",\"configurationStateId\":1511311618684,\"awsAccountId\":\"123456789012\",\"configurationItemStatus\":\"ResourceDiscovered\",\"resourceType\":\"AWS::EC2::VPC\",\"resourceId\":\"vpc-123445\",\"resourceName\":null,\"ARN\":\"arn:aws:ec2:eu-west-1:123456789012:vpc/vpc-123445\",\"awsRegion\":\"eu-west-1\",\"availabilityZone\":\"Multiple Availability Zones\",\"configurationStateMd5Hash\":\"7918933f2ec0054f6075d097abe74694\",\"resourceCreationTime\":null},\"notificationCreationTime\":\"2017-11-22T00:46:59.585Z\",\"messageType\":\"ConfigurationItemChangeNotification\",\"recordVersion\":\"1.2\"}",
+  "ruleParameters": "{}",
+  "resultToken": "test",
+  "eventLeftScope": false,
+  "executionRoleArn": "arn:aws:iam::123456789012:role/service-role/config-role-eu-west-1",
+  "configRuleArn": "arn:aws:config:eu-west-1:123456789012:config-rule/config-rule-123445",
+  "configRuleName": "vpc-mod-3-rule",
+  "configRuleId": "config-rule-123445",
+  "accountId": "123456789012",
+  "dryRun": true
+}

@@ -1,0 +1,13 @@
+{
+   "version":"1.0",
+   "invokingEvent":"{\"configurationItemDiff\":null,\"configurationItem\":{\"relatedEvents\":[],\"relationships\":[],\"configuration\":{\"name\":\"test-bucket-12345\",\"owner\":{\"displayName\":\"username\",\"id\":\"26313a221d5c79fe9fce059648986b895e5595fc93b3d8470da3e5e0fc675f54\"},\"creationDate\":\"2017-10-03T03:40:43.000Z\"},\"supplementaryConfiguration\":{\"AccessControlList\":\"{\\\"grantSet\\\":null,\\\"grantList\\\":[{\\\"grantee\\\":{\\\"id\\\":\\\"26313a221d5c79fe9fce059648986b895e5595fc93b3d8470da3e5e0fc675f54\\\",\\\"displayName\\\":null},\\\"permission\\\":\\\"FullControl\\\"}],\\\"owner\\\":{\\\"displayName\\\":null,\\\"id\\\":\\\"26313a221d5c79fe9fce059648986b895e5595fc93b3d8470da3e5e0fc675f54\\\"},\\\"isRequesterCharged\\\":false}\",\"BucketAccelerateConfiguration\":{\"status\":null},\"BucketLoggingConfiguration\":{\"destinationBucketName\":null,\"logFilePrefix\":null},\"BucketNotificationConfiguration\":{\"configurations\":{}},\"BucketPolicy\":{\"policyText\":null},\"BucketVersioningConfiguration\":{\"status\":\"Off\",\"isMfaDeleteEnabled\":null},\"IsRequesterPaysEnabled\":false},\"tags\":{},\"configurationItemVersion\":\"1.2\",\"configurationItemCaptureTime\":\"2017-10-03T03:59:31.349Z\",\"configurationStateId\":1507003171349,\"awsAccountId\":\"999999999999\",\"configurationItemStatus\":\"ResourceDiscovered\",\"resourceType\":\"AWS::S3::Bucket\",\"resourceId\":\"account-config-test\",\"resourceName\":\"test-bucket-12345\",\"ARN\":\"arn:aws:s3:::account-config-test\",\"awsRegion\":\"eu-west-1\",\"availabilityZone\":\"Regional\",\"configurationStateMd5Hash\":\"3dcc36405dddacc1a10fba7f7caebd8f\",\"resourceCreationTime\":\"2017-10-03T03:40:43.000Z\"},\"notificationCreationTime\":\"2017-11-16T15:59:15.004Z\",\"messageType\":\"ConfigurationItemChangeNotification\",\"recordVersion\":\"1.2\"}",
+   "ruleParameters":"{}",
+   "resultToken":"testToken",
+   "eventLeftScope":false,
+   "executionRoleArn":"arn:aws:iam::999999999999:role/service-role/config-role-eu-west-1",
+   "configRuleArn":"arn:aws:config:eu-west-1:999999999999:config-rule/config-rule-cgy1ye",
+   "configRuleName":"S3-LifecyclePolicy",
+   "configRuleId":"config-rule-cgy1ye",
+   "accountId":"999999999999",
+   "dryRun": false
+}

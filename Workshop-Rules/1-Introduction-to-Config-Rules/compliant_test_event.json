@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "invokingEvent": "{\"configurationItemDiff\":null,\"configurationItem\":{\"relatedEvents\":[],\"relationships\":[{\"resourceId\":\"vpc-d7a2f4b2\",\"resourceName\":null,\"resourceType\":\"AWS::EC2::VPC\",\"name\":\"Is contained in Vpc\"}],\"configuration\":{\"description\":\"http and https only.\",\"groupName\":\"webserver-lambda\",\"ipPermissions\":[],\"ownerId\":\"123456789012\",\"groupId\":\"sg-1234567\",\"ipPermissionsEgress\":[{\"fromPort\":22,\"ipProtocol\":\"tcp\",\"ipv6Ranges\":[],\"prefixListIds\":[],\"toPort\":22,\"userIdGroupPairs\":[],\"ipv4Ranges\":[{\"cidrIp\":\"1.1.1.1/32\"}],\"ipRanges\":[\"1.1.1.1/32\"]}],\"tags\":[],\"vpcId\":\"vpc-1234567\"},\"supplementaryConfiguration\":{},\"tags\":{},\"configurationItemVersion\":\"1.2\",\"configurationItemCaptureTime\":\"2017-06-28T17:47:21.582Z\",\"configurationStateId\":123456778,\"awsAccountId\":\"123456789012\",\"configurationItemStatus\":\"OK\",\"resourceType\":\"AWS::EC2::SecurityGroup\",\"resourceId\":\"sg-1234567\",\"resourceName\":\"compliant-sg\",\"ARN\":\"arn:aws:ec2:us-west-2:123456789012:security-group/sg-123456\",\"awsRegion\":\"us-west-2\",\"availabilityZone\":\"Not Applicable\",\"configurationStateMd5Hash\":\"12312423423542352\",\"resourceCreationTime\":null},\"notificationCreationTime\":\"2017-11-21T00:05:53.150Z\",\"messageType\":\"ConfigurationItemChangeNotification\",\"recordVersion\":\"1.2\"}",
+  "ruleParameters": "{\"ipAddress\":\"1.1.1.1/32\"}",
+  "resultToken": "TEST_TOKEN",
+  "eventLeftScope": false,
+  "executionRoleArn": "arn:aws:iam::123456789012:role/config-role",
+  "configRuleArn": "arn:aws:config:us-west-2:123456789012:config-rule/config-rule-12345",
+  "configRuleName": "YourRuleName",
+  "configRuleId": "config-rule-12345",
+  "accountId": "123456789012",
+  "dryRun": true
+}
