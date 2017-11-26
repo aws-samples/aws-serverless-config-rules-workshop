@@ -18,7 +18,7 @@ def cidrcheck(net1, net2):
         n2 = ipaddress.IPv4Network(net2)
         if ##CHANGED##.overlaps(##CHANGED##):
             logger.info("Found Overlap!")
-            ##LINE_REMOVED##
+            ##LINE_REMOVED: what variable should be set, indicated that an overlap was found?##
 
     return noOverlaps
 
@@ -29,9 +29,7 @@ def lambda_handler(event, context):
     config_item = event_item['configurationItem']
     resource_type = config_item['resourceType']
 
-    logger.info(json.dumps(event_item))
-    logger.info(json.dumps(rules_item))
-
+    logger.info("Event: " + json.dumps(event))
 
 # Make sure config_item is not deleted and of the correct type
     if config_item['configurationItemStatus'] == 'ResourceDeleted' or \
@@ -50,7 +48,7 @@ def lambda_handler(event, context):
     onprem = rules_item['##CHANGED##'].split('##CHANGED##')
     cidr = config_item['configuration']['##CHANGED##']
 
-    result = ##LINED_REMOVED##
+    result = ##LINED_REMOVED: where are the networks checked for an overlap?##
 
     if result is True:
         evaluation['ComplianceType'] = 'COMPLIANT'

@@ -1,10 +1,10 @@
-import json
-import boto3
+import ##CHANGED##
+import ##CHANGED##
 import logging
 
 
-APPLICABLE_RESOURCES = ["AWS::S3::Bucket"]
-config = boto3.client("config")
+APPLICABLE_RESOURCES = ["##CHANGED##"]
+config = boto3.client("##CHANGED##")
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 

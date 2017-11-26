@@ -8,5 +8,6 @@
   "configRuleArn": "arn:aws:config:eu-west-1:123456789012:config-rule/config-rule-18uhud",
   "configRuleName": "SecurityGroupCheck",
   "configRuleId": "config-rule-3242423",
-  "accountId": "123456789012"
+  "accountId": "123456789012",
+  "dryRun": true
 }
