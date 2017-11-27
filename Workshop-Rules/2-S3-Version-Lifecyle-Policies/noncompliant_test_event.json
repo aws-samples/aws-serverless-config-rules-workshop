@@ -9,5 +9,5 @@
    "configRuleName":"S3-LifecyclePolicy",
    "configRuleId":"config-rule-cgy1ye",
    "accountId":"999999999999",
-   "dryRun": false
+   "dryRun": true
 }

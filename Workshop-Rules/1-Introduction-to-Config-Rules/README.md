@@ -5,7 +5,7 @@ For module one of this workshop, we will walk you through creating a custom rule
 This rule is intended to ensure that all SSH access granted via security groups is entirely locked down to a single /32 IP address (1.1.1.1/32 for this hypothetical exercise).  An organization may want to have a rule similar to this to ensure that all SSH traffic is originating from a bastion host or gateway device within their known and controlled network.  Any security groups that allow SSH access to an IP address or IP range other than 1.1.1.1/32 should be evaluated as Noncompliant.
 
 ## Create a Lambda Function
-Each Config rule that you create and manage is an AWS Lambda function that contains the logic for evaluating resource configurations tracked and notified through AWS Config. All of the code that we have provided for this module (in `rule.py`) represents a complete Lambda function to evaluate security group configurations according to the rule we have described above, in Python 3.6. In order to create a Lambda function for this code to be executed, follow these steps:
+Each Config rule that you create and manage is an AWS Lambda function that contains the logic for evaluating resource configurations tracked and notified through AWS Config. All of the code that we have provided for this module (in [`rule.py`](./rule.py)) represents a complete Lambda function to evaluate security group configurations according to the rule we have described above, in Python 3.6. In order to create a Lambda function for this code to be executed, follow these steps:
 
 1. Visit the [AWS Lambda console](https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1).
 
@@ -19,11 +19,11 @@ Each Config rule that you create and manage is an AWS Lambda function that conta
 
 6. Within the Lambda function Code Editor, modify the **Runtime** to be *Python 3.6*. The remainder of the configuration can remain as default.
 
-7.  Copy all of the code within **rule.py** and paste it in the Code Editor within the Lambda console, replacing all the previous contents.
+7.  Copy all of the code within [**rule.py**](./rule.py) and paste it in the Code Editor within the Lambda console, replacing all the previous contents.
 
 8. Click **Save and Test**
 
-9. You will be prompted to create a test event that will be used to invoke your Lambda function, to test it's logic.  Copy the contents of **compliant_test_event.json** or **noncompliant_test_event.json** and paste it within the Test Event editor, replacing any of the Event Templates chosen. Name your event something descriptive, and **Create**.
+9. You will be prompted to create a test event that will be used to invoke your Lambda function, to test it's logic.  Copy the contents of [**compliant_test_event.json**](./compliant_test_event.json) or [**noncompliant_test_event.json**](./noncompliant_test_event.json) and paste it within the Test Event editor, replacing any of the Event Templates chosen. Name your event something descriptive, and **Create**.
 
 10.  Your Lambda function will execute, and return a response of either COMPLIANT or NONCOMPLIANT. If your rule returns the appropriate response to both dryrun events, things are working as expected!
 
