@@ -1,5 +1,5 @@
 # No IGWs for Private VPCs
-Completion of this rule will require you to create a Lambda function and custom Config Rule using the yet-to-be complete code provided in `rule.py`.  The method and process of creating a new Lambda function and new custom Config Rule will mirror Module 1.  This Lambda function *will* require different permissions in the policy for its IAM role, and it's code requires completion as well.
+Completion of this rule will require you to create a Lambda function and custom Config Rule using the yet-to-be complete code provided in [`rule.py`](./rule.py).  The method and process of creating a new Lambda function and new custom Config Rule will mirror Module 1.  This Lambda function *will* require different permissions in the policy for its IAM role, and it's code requires completion as well.
 
 ## The Purpose of This Rule
 Whether it be to build internal applications whose audiences should always be on a private network, or to reduce the attack surface of an application that stores highly sensitive data, not all applications need access to the Internet.  This Config Rule's purpose is to ensure that VPCs that have a tag key equal to `private` do not have an Internet Gateway (IGW) attached to them.  If a VPC is found to both contain a tag key of `private` and an IGW is attached, it is noncompliant.

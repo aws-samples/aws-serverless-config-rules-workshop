@@ -1,5 +1,5 @@
 # S3 Lifecycle Policy Compliance
-Completion of this rule will require you to create a Lambda function and custom Config Rule using the yet-to-be complete code provided in `rule.py`.  The method and process of creating a new Lambda function and new custom Config Rule will mirror Module 1, no additional or different permissions are required.  All that will differ are the code for the Lambda function, and the configuration of the Config Rule.
+Completion of this rule will require you to create a Lambda function and custom Config Rule using the yet-to-be complete code provided in [`rule.py`](./rule.py).  The method and process of creating a new Lambda function and new custom Config Rule will mirror Module 1, no additional or different permissions are required.  All that will differ are the code for the Lambda function, and the configuration of the Config Rule.
 
 ## The Purpose of This Rule
 While the Config Rule in Module 1 was focused on security/compliance, you can also use Config Rules as a mechanism for enforcing organizational policies that are unrelated to security/compliance.  Cost Savings is another worthy pursuit for building automated compliance evaluations with Config Rules.
